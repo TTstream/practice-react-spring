@@ -16,7 +16,7 @@
 	<artifactId>spring-boot-starter-web</artifactId>
 </dependency>
 ```
-=> 위의 코드에서 <artifactId>안에 spring-boot-starter-web 이 맞는지 확인 틀리면 고치기
+=> 위의 코드에서 <artifactId>안에 spring-boot-starter-web 이 맞는지 확인 틀리면 수정 후 Maven Reload
 
 [ frontend 파일 깃허브 업로드 오류 ] </br>
 => frontend 파일의 위치를 src/main/frontend에 위치시켜야 깃허브에 업로드가 된다.
