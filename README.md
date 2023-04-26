@@ -8,6 +8,10 @@
 5. Spring 코드 작성 및 react코드 작성해서 연동되는지 확인해보기
 6. react,spring 이 두 개를 실행해야 작동
 
+OR
+
+react,spring 각 파일들 따로 실행
+
 ## 오류 모음 및 해결방법
 [ @RestController 인식 안되는 오류 ] </br>
 ```xml
