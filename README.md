@@ -50,4 +50,12 @@ npm ERR! A complete log of this run can be found in:
     ],
     "proxy": "https://localhost:8080/"
   }
+  
+OR
+
+"options": {
+    "allowedHosts": "all",
+    "proxy": "https://localhost:8080/"
+  }
+  
 ```
