@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 /* className="" 따옴표안에 css 자동완성 => 마켓 플레이스에서 IntelliSense for CSS class names in HTML 확장 프로그램 다운 */
 function AddUser() {
+  const [user, setUser] = useState({
+    name: "",
+    username: "",
+    email: "",
+  });
+
+  const { name, username, email } = user;
+
+  const onInputChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -15,6 +27,8 @@ function AddUser() {
               className="form-control"
               placeholder="Enter your name"
               name="name"
+              value={name}
+              onChange={(e) => onInputChange(e)}
             />
           </div>
           <div className="mb-3">
@@ -26,6 +40,8 @@ function AddUser() {
               className="form-control"
               placeholder="Enter your username"
               name="username"
+              value={username}
+              onChange={(e) => onInputChange(e)}
             />
           </div>
           <div className="mb-3">
@@ -37,6 +53,8 @@ function AddUser() {
               className="form-control"
               placeholder="Enter your e-mail address"
               name="email"
+              value={email}
+              onChange={(e) => onInputChange(e)}
             />
           </div>
           <button type="submit" className="btn btn-outline-primary">
