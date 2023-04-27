@@ -1,6 +1,6 @@
 # `정리`
 
-## react-spring 연동 
+## :pushpin: react-spring 연동 
 1. Spring 파일 다운로드
 2. Spring 에서 터미널 접속 후 react파일 다운 npx create-react-app@5.0.1 frontend
 3. frontend 파일의 위치를 Spring의 src/main/frontend에 위치시키기
@@ -12,7 +12,7 @@ OR
 
 react,spring 각 파일들 따로 실행
 
-## 오류 모음 및 해결방법
+## :x: 오류 모음 및 해결방법
 ### [ @RestController 인식 안되는 오류 ] </br>
 ```xml
 <dependency>
@@ -59,3 +59,6 @@ OR
   }
   
 ```
+
+##  :running: 진행사항
+IntelliSense for CSS class names in HTML 확장 프로그램 다운 => CSS 입력시 자동완성 기능
