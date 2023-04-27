@@ -1,6 +1,9 @@
+import axios from "axios";
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 /* className="" 따옴표안에 css 자동완성 => 마켓 플레이스에서 IntelliSense for CSS class names in HTML 확장 프로그램 다운 */
 function AddUser() {
+  var navigate = useNavigate();
   const [user, setUser] = useState({
     name: "",
     username: "",
@@ -13,56 +16,63 @@ function AddUser() {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    await axios.post("http://localhost:8080/user", user);
+    navigate("/");
+  };
   return (
     <div className="container">
       <div className="row">
         <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
           <h2 className="text-center m-4">Register User</h2>
-          <div className="mb-3">
-            <label htmlFor="Name" className="form-label">
-              Name
-            </label>
-            <input
-              type={"text"}
-              className="form-control"
-              placeholder="Enter your name"
-              name="name"
-              value={name}
-              onChange={(e) => onInputChange(e)}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="Username" className="form-label">
-              Username
-            </label>
-            <input
-              type={"text"}
-              className="form-control"
-              placeholder="Enter your username"
-              name="username"
-              value={username}
-              onChange={(e) => onInputChange(e)}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label">
-              E-mail
-            </label>
-            <input
-              type={"text"}
-              className="form-control"
-              placeholder="Enter your e-mail address"
-              name="email"
-              value={email}
-              onChange={(e) => onInputChange(e)}
-            />
-          </div>
-          <button type="submit" className="btn btn-outline-primary">
-            submit
-          </button>
-          <button type="submit" className="btn btn-outline-danger mx-2">
-            Cancel
-          </button>
+          <form onSubmit={(e) => onSubmit(e)}>
+            <div className="mb-3">
+              <label htmlFor="Name" className="form-label">
+                Name
+              </label>
+              <input
+                type={"text"}
+                className="form-control"
+                placeholder="Enter your name"
+                name="name"
+                value={name}
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="Username" className="form-label">
+                Username
+              </label>
+              <input
+                type={"text"}
+                className="form-control"
+                placeholder="Enter your username"
+                name="username"
+                value={username}
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="email" className="form-label">
+                E-mail
+              </label>
+              <input
+                type={"text"}
+                className="form-control"
+                placeholder="Enter your e-mail address"
+                name="email"
+                value={email}
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <button type="submit" className="btn btn-outline-primary">
+              submit
+            </button>
+            <Link type="submit" className="btn btn-outline-danger mx-2" to="/">
+              Cancel
+            </Link>
+          </form>
         </div>
       </div>
     </div>
