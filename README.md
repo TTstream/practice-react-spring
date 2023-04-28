@@ -59,6 +59,8 @@ OR
   }
   
 ```
+## :bookmark: 참조 영상
+FULLSTACK CRUD Playlist : https://www.youtube.com/playlist?list=PL1oBBulPlvs84AmRmT-_3dGz4KHYuINsj
 
 ##  :running: 진행사항
 IntelliSense for CSS class names in HTML 확장 프로그램 다운 => CSS 입력시 자동완성 기능
