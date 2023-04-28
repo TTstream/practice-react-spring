@@ -59,8 +59,10 @@ OR
   }
   
 ```
-## :bookmark: 참조 영상
-FULLSTACK CRUD Playlist : https://www.youtube.com/playlist?list=PL1oBBulPlvs84AmRmT-_3dGz4KHYuINsj
+## :bookmark: 참조
+FULLSTACK CRUD Playlist 영상 : https://www.youtube.com/playlist?list=PL1oBBulPlvs84AmRmT-_3dGz4KHYuINsj
+
+리액트 라우터 기본 사용방법 : https://jinyisland.kr/post/react-router/
 
 ##  :running: 진행사항
 IntelliSense for CSS class names in HTML 확장 프로그램 다운 => CSS 입력시 자동완성 기능
