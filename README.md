@@ -66,3 +66,10 @@ FULLSTACK CRUD Playlist 영상 : https://www.youtube.com/playlist?list=PL1oBBulP
 
 ##  :running: 진행사항
 IntelliSense for CSS class names in HTML 확장 프로그램 다운 => CSS 입력시 자동완성 기능
+
+### [ react, spring 구조 ]
+
+<img src="https://user-images.githubusercontent.com/76469073/235279692-05d8a762-d724-41a2-b211-020a5e04b263.png" width="600" height="370">
+ 
+### [ 실행화면 ]
+
